@@ -263,6 +263,7 @@ const provider = new providers.Web3Provider(window.ethereum)
 ```ts {4-7}
 import { createWalletClient, custom } from 'viem'
 import { mainnet } from 'viem/chains'
+import 'viem/window'
 
 const client = createWalletClient({
   chain: mainnet,
